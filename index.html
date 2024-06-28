@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- Mirrored from quizresgateagora.online/quiz/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 16 Apr 2024 14:49:08 GMT -->
+
+<!-- Mirrored from premierorg.site/pet/quizw/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 17 Jun 2024 14:15:59 GMT -->
+
+<!-- Mirrored from pesquisa-50anos.fun/Pesquisa/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Jun 2024 17:39:54 GMT -->
+<head>
+
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <script src="js/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="favicon.html" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon.html">
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <link rel="icon" href="images/favicon.jpg" type="image/x-icon">
+  <title>PremieRpet® | Quiz</title>
+  <script src="js/latest_1.js" async="" defer=""></script>
+</head><!-- Meta Pixel Code -->
+
+<body>
+<!-- End Meta Pixel Code -->
+
+  <header>
+    <i class="fa-solid fa-bars" style="color: white"></i>
+    <img src="images/logo.jpg" alt="">
+    <span id="saldo" style="margin-left: auto"></span>
+  </header>
+  
+
+  <main>
+    <div class="card pergunta01" id="pergunta01">
+      <div class="card__logo">
+        <img src="images/cacau1.png" alt="">
+      </div>
+      <div class="card__satisfacao">
+        <h2>De 0 a 5, como você avaliaria sua familiaridade com a marca PremieRpet®?</h2>
+        <div class="card__gradeContainer">
+          <div class="card__grade" id="card__grade1" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star1"></i>
+          </div>
+          <div class="card__grade" id="card__grade2" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star2"></i>
+          </div>
+          <div class="card__grade" id="card__grade3" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star3"></i>
+          </div>
+          <div class="card__grade" id="card__grade4" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star4"></i>
+          </div>
+          <div class="card__grade" id="card__grade5" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star5"></i>
+          </div>
+        </div>
+        <div class="card__gradeDescricao">
+          <p>Muito ruim</p>
+          <p>Muito bom</p>
+        </div>
+      </div>
+      <div class="card__resposta">
+        <h2>
+          Quando pensa na PremieRpet®, qual a primeira palavra que vem na sua
+          mente?
+        </h2>
+        <div class="resposta__gradeContainer">
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">Saúde</p>
+          </div>
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">Segurança</p>
+          </div>
+        </div>
+      </div>
+      <div class="card__resposta">
+        <h2>Qual imagem você associa a PremieRpet®?</h2>
+        <div class="resposta__gradeContainer">
+          <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+            <p>Excelência em Nutrição</p>
+          </div>
+          <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+            <p>Qualidade</p>
+          </div>
+        </div>
+      </div>
+      <button class="card__enviarResposta" id="enviarResposta" onclick="pergunta01()" disabled="">
+        Enviar avaliação
+      </button>
+    </div>
+    <div class="card pergunta02" id="pergunta02" style="display: none">
+      <div class="card__logo">
+        <img src="images/cacau2.png" alt="">
+      </div>
+      <div class="card__satisfacao">
+        <h2>
+          De 0 a 5, como você avaliaria a qualidade das rações da PremieRpet®?
+        </h2>
+        <div class="card__gradeContainer">
+          <div class="card__grade" id="card__grade1" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star1"></i>
+          </div>
+          <div class="card__grade" id="card__grade2" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star2"></i>
+          </div>
+          <div class="card__grade" id="card__grade3" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star3"></i>
+          </div>
+          <div class="card__grade" id="card__grade4" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star4"></i>
+          </div>
+          <div class="card__grade" id="card__grade5" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star5"></i>
+          </div>
+        </div>
+        <div class="card__gradeDescricao">
+          <p>Muito ruim</p>
+          <p>Muito bom</p>
+        </div>
+      </div>
+      <div class="card__resposta">
+        <h2>
+          Como você prefere usar os produtos da PremieRpet®?
+        </h2>
+        <div class="resposta__gradeContainer">
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">Para presentear</p>
+          </div>
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">Para o meu cachorro</p>
+          </div>
+        </div>
+      </div>
+      <div class="card__resposta">
+        <h2>Qual produto da PremieRpet® faz seu cachorro pular de alegria?</h2>
+        <div class="resposta__gradeContainer">
+          <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+            <p>Ração PremieR</p>
+          </div>
+          <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+            <p>PremieR Cookies</p>
+          </div>
+        </div>
+      </div>
+      <button class="card__enviarResposta" id="enviarResposta" onclick="pergunta02()" disabled="">
+        Enviar avaliação
+      </button>
+    </div>
+
+    <div class="card pergunta03" id="pergunta03" style="display: none">
+      <div class="card__logo">
+        <img src="images/cacau3.png" alt="">
+      </div>
+      <div class="card__satisfacao">
+        <h2>De 0 a 5, como você avalia a experiência de presentear alguém com produtos da PremieR?</h2>
+        <div class="card__gradeContainer">
+          <div class="card__grade" id="card__grade1" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star1"></i>
+          </div>
+          <div class="card__grade" id="card__grade2" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star2"></i>
+          </div>
+          <div class="card__grade" id="card__grade3" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star3"></i>
+          </div>
+          <div class="card__grade" id="card__grade4" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star4"></i>
+          </div>
+          <div class="card__grade" id="card__grade5" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star5"></i>
+          </div>
+        </div>
+        <div class="card__gradeDescricao">
+          <p>Muito ruim</p>
+          <p>Muito bom</p>
+        </div>
+      </div>
+      <div class="card__resposta">
+        <h2>Com quem você adora compartilhar os produtos da PremieR?</h2>
+        <div class="resposta__gradeContainer">
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">Meus cachorros</p>
+          </div>
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">Outros cachorros de rua</p>
+          </div>
+        </div>
+      </div>
+      <div class="card__resposta">
+        <h2>
+          Qual produto da PremieR você escolheria para presentear alguém
+          especial?
+        </h2>
+        <div class="resposta__gradeContainer">
+          <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+            <p>PremieR Raças específicas</p>
+          </div>
+          <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+            <p>PremieR Formula</p>
+          </div>
+        </div>
+      </div>
+      <button class="card__enviarResposta" id="enviarResposta" onclick="pergunta03()" disabled="">
+        Enviar avaliação
+      </button>
+    </div>
+
+    <div class="card pergunta04" id="pergunta04" style="display: none">
+      <div class="card__logo">
+        <img src="images/cacau4.png" alt="">
+      </div>
+      <div class="card__satisfacao">
+        <h2>De 0 a 5, quão importante é a conexão emocional com a marca PremieR para seu Pet?</h2>
+        <div class="card__gradeContainer">
+          <div class="card__grade" id="card__grade1" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star1"></i>
+          </div>
+          <div class="card__grade" id="card__grade2" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star2"></i>
+          </div>
+          <div class="card__grade" id="card__grade3" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star3"></i>
+          </div>
+          <div class="card__grade" id="card__grade4" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star4"></i>
+          </div>
+          <div class="card__grade" id="card__grade5" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star5"></i>
+          </div>
+        </div>
+        <div class="card__gradeDescricao">
+          <p>Muito ruim</p>
+          <p>Muito bom</p>
+        </div>
+      </div>
+      <div class="card__resposta">
+        <h2>Qual experiência com a PremieR você gostaria de vivenciar?</h2>
+        <div class="resposta__gradeContainer">
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">Uma viagem com tudo pago</p>
+          </div>
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">1 Ano de ração de qualidade para o meu cachorro</p>
+          </div>
+        </div>
+      </div>
+      <div class="card__resposta">
+        <h2>O que torna a PremieR especial para você?</h2>
+        <div class="resposta__gradeContainer">
+          <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+            <p>A qualidade dos produtos</p>
+          </div>
+          <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+            <p>Mais saúde para o meu Pet</p>
+          </div>
+        </div>
+      </div>
+      <button class="card__enviarResposta" id="enviarResposta" onclick="pergunta04()" disabled="">
+        Enviar avaliação
+      </button>
+    </div>
+
+    <div class="card pergunta05" id="pergunta05" style="display: none">
+      <div class="card__logo">
+        <img src="images/cacau5.png" alt="">
+      </div>
+      <div class="card__satisfacao">
+        <h2>
+          De 0 a 5, quão entusiasmado(a) você estaria por novos produtos inovadores da PremieR?
+        </h2>
+        <div class="card__gradeContainer">
+          <div class="card__grade" id="card__grade1" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star1"></i>
+          </div>
+          <div class="card__grade" id="card__grade2" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star2"></i>
+          </div>
+          <div class="card__grade" id="card__grade3" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star3"></i>
+          </div>
+          <div class="card__grade" id="card__grade4" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star4"></i>
+          </div>
+          <div class="card__grade" id="card__grade5" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star5"></i>
+          </div>
+        </div>
+        <div class="card__gradeDescricao">
+          <p>Muito ruim</p>
+          <p>Muito bom</p>
+        </div>
+      </div>
+      <div class="card__resposta">
+        <h2>
+          Se você pudesse criar um novo produto para a PremieR, ele seria:
+        </h2>
+        <div class="resposta__gradeContainer">
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">Uma linha de petiscos acessível</p>
+          </div>
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">Uma coleção de roupinhas para os pets</p>
+          </div>
+        </div>
+      </div>
+      <div class="card__resposta">
+        <h2>O que você espera da PremieR no futuro?</h2>
+        <div class="resposta__gradeContainer">
+          <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+            <p>Mais descontos nos produtos</p>
+          </div>
+          <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+            <p>Novos produtos e linhas exclusivas</p>
+          </div>
+        </div>
+      </div>
+      <button class="card__enviarResposta" id="enviarResposta" onclick="pergunta05()" disabled="">
+        Enviar avaliação
+      </button>
+    </div>
+    <div class="card finalizacao" id="finalizacao" style="display: none">
+      <div class="finalizacao__titulo">
+        <h1 style="color: #FD6804;">PARABÉNS!</h1>
+      </div>
+      <div class="finalizacao__trofeu">
+        <img src="images/ursinhos.jpg" alt="">
+      </div>
+      <div class="finalizacao__descricao">
+        <p>
+          Você concluiu nossa avaliação da PremieR e ganhou
+          <b>1 - KIT Ração Golden Fórmula Cães Adultos Frango E Arroz - 20kg + PremieR Formula Cães Adultos E Pequeno Porte Médio Frango - PremieR Pets</b>! Clique no botão <b>RESGATAR</b> abaixo para
+          resgatar seu prêmio.
+        </p>
+        <p>
+          Agradecemos sua participação e esperamos que desfrute do seu combo
+          cheio de carinho e sabor para o seu Pet.<br><br>Com carinho, <br>Equipe PremieRPet.
+        </p>
+      </div>
+      <div class="finalizacao__botao">
+        <a href="premio2.html"><button style="background-color: #FD6804;"><i class="fa-solid fa-gift"></i>  RESGATAR</button></a>
+      </div>
+    </div>
+
+    <button data-bs-toggle="modal" data-bs-target="#modal01" id="popup" style="display: none"></button>
+
+    <div class="modal" tabindex="-1" id="modal01">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="card apresentacao">
+            <h2>
+              🎉 Quiz Exclusivo PremieRpet®: Comemoração de 24 anos da marca! 🎉
+            </h2>
+            <p>
+              Seja bem-vindo(a) ao nosso quiz especial! Aqui na PremieRpet®,
+              queremos celebrar com vocês, nossos clientes, todo amor e carinho que nos proporcionam.
+              Participe desta jornada e ao final, <strong> Pegue seu prêmio gratuitamente! </strong> 
+              <strong>Pronto para começar?</strong>
+            </p>
+            <button style="background-color: #FD6804;" type="button" data-bs-dismiss="modal">COMEÇAR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/hideAllExcept.js"></script>
+  <script src="js/selectedCard.js"></script>
+  <script src="js/selectedResponse.js"></script>
+  <script src="js/buttonCheck.js"></script>
+  <script src="js/popup.js"></script>
+  <script src="js/sendResponse.js"></script>
+  <script>
+    $(document).ready(function () {
+      let data = new Date();
+
+      var date = data.getDate();
+      var month = [
+        "Janeiro",
+        "Fevereiro",
+        "Março",
+        "Abril",
+        "Maio",
+        "Junho",
+        "Julho",
+        "Agosto",
+        "Setembro",
+        "Outubro",
+        "Novembro",
+        "Dezembro",
+      ][data.getMonth()];
+      var year = data.getFullYear();
+
+      $("#todayDate").html(`${date} de ${month} de ${year}**`);
+    });
+  </script>
+  <script type="text/javascript" src="js/crypto-js.min.js"></script>
+
+  <script>
+    var popup = document.getElementById("popup");
+
+    document.addEventListener("DOMContentLoaded", function () {
+      popup.click();
+    });
+  </script>
+<script src="js/latest_1.js" async="" defer=""></script>
+
+</body>
+<!-- Mirrored from quizresgateagora.online/quiz/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 16 Apr 2024 14:49:15 GMT -->
+
+<!-- Mirrored from premierorg.site/pet/quizw/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 17 Jun 2024 14:16:05 GMT -->
+
+<!-- Mirrored from pesquisa-50anos.fun/Pesquisa/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Jun 2024 17:40:27 GMT -->
+</html>
