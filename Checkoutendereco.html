@@ -11,7 +11,7 @@
             display: none; /* Manter as opções de envio ocultas inicialmente */
             margin-top: 20px; /* Espaço superior para separar do formulário */
             padding: 20px; /* Espaço interno para destacar a borda */
-            border: 2px solid #ffffff; /* Borda de 2px na cor branca */
+            border: 8px solid #ffffff; /* Borda de 2px na cor branca */
             border-radius: 10px; /* Canto arredondado para a borda */
         }
 
@@ -128,7 +128,7 @@
                 <!-- Benefícios Destacados -->
                 <div class="beneficios">
                     <h3>Obrigado por participar do quiz!</h3>
-                    <p style="color: #4B4B4B;">Aproveite essa oferta especial e receba o KIT Ração Golden Fórmula Cães Adultos Frango E Arroz - 20kg + PremieR Formula Cães Adultos e Pequenos Porte Médio Frango gratuitamente. Escolha a melhor opção de envio abaixo para garantir sua entrega rápida.</p>
+                    <p style="color: #4B4B4B;">Aproveite essa oferta especial e receba o KIT Ração Golden Fórmula Cães Adultos Frango E Arroz - 20kg + PremieR Formula Cães Adultos e Pequenos Porte Médio Frango + 1 Brinquedo Fly ball gratuitamente. Escolha a melhor opção de envio abaixo para garantir sua entrega rápida.</p>
                     <p style="color: #4B4B4B;">- A equipe da PremieR Pets, agradece.</p>
                 </div>
                 <h2 style="font-weight: bold;">Preencha as informações corretamente!</h2>
@@ -174,14 +174,14 @@
                         <input class="form-check-input" type="radio" name="opcaoEnvio" id="sedexOption" value="sedex">
                         <label class="form-check-label" style="font-size: 20px;" for="sedexOption">
                             <img src="images/sedexLogo.jpg" alt="Sedex" style="margin-left: 10px; width: 50px; height: auto;">
-                            Envio Sedex - <span style="font-size: 15px;">R$ 29,99 (até 7 dias)</span> 
+                            Envio Sedex - <span style="font-size: 15px;">R$ 19,99 (até 7 dias)</span> 
                         </label>
                     </div>
                     <div class="form-check mt-3">
                         <input class="form-check-input" type="radio" name="opcaoEnvio" id="pacOption" value="pac">
                         <label style="font-size: 20px;" class="form-check-label" for="pacOption">
                             <img src="images/pacLogo.jpg" alt="PAC" style="margin-left: 10px;width: 50px; height: auto;">
-                            Envio PAC -  <span style="font-size: 15px;">R$ 19,99 (até 14 dias)</span>
+                            Envio PAC -  <span style="font-size: 15px;">R$ 10,99 (até 14 dias)</span>
                         </label>
                     </div>
                     <div class="form-check mt-3 frete-indisponivel">
@@ -204,7 +204,7 @@
                         <div>
                             <img src="images/produtoCarrinho.png" alt="Miniatura do Prêmio Quiz" style="width: 100px; height: auto; margin-right: 10px;">
                             <h6 class="my-0"> Prêmio Quiz - PremieR Pets</h6>
-                            <small class="text-muted">Ração Golden & PremieR Formula</small>
+                            <small class="text-muted">Ração Golden + PremieR Formula + Fly ball</small>
                             <small class="text-muted">#3435487</small>
                         </div>
                         <span class="text-muted" style="font-size: 10px;">R$ 429,00</span>
@@ -293,9 +293,9 @@
                 // Calcular valor do frete
                 var valorFrete = 0;
                 if (opcaoEnvio === 'sedex') {
-                    valorFrete = 29.99;
-                } else if (opcaoEnvio === 'pac') {
                     valorFrete = 19.99;
+                } else if (opcaoEnvio === 'pac') {
+                    valorFrete = 10.99;
                 }
 
                 // Atualizar valor do frete no carrinho
@@ -319,9 +319,9 @@
                 var opcaoSelecionada = $(this).val();
                 var valorFrete = 0;
                 if (opcaoSelecionada === 'sedex') {
-                    valorFrete = 29.99;
-                } else if (opcaoSelecionada === 'pac') {
                     valorFrete = 19.99;
+                } else if (opcaoSelecionada === 'pac') {
+                    valorFrete = 10.99;
                 }
 
                 // Atualizar texto no carrinho
