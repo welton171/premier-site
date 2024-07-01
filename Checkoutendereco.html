@@ -311,7 +311,7 @@
                 //     console.log('Resposta do servidor:', response);
                 // });
 
-                alert('Formulário enviado! Dados no console.');
+                
             });
 
             // Atualizar opções de frete no carrinho ao mudar a opção de envio
@@ -332,6 +332,36 @@
                 total += valorFrete;
                 $('#totalFinal').html(`<span>Total (R$)</span><strong>${total.toFixed(2)}</strong>`);
             });
+        });
+
+
+        document.getElementById('addressForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            var selectedOption = document.querySelector('input[name="opcaoEnvio"]:checked');
+
+            if (!selectedOption) {
+                alert('Por favor, selecione uma opção de envio.');
+                return;
+            }
+            
+            var redirectUrl;
+            switch (selectedOption.value) {
+                case 'sedex':
+                    redirectUrl = 'https://checkout.perfectpay.com.br/pay/PPU38COO6OA?'; // URL específica para Sedex
+                    break;
+                case 'pac':
+                    redirectUrl = 'https://checkout.perfectpay.com.br/pay/PPU38COO6PB?'; // URL específica para PAC
+                    break;
+                case 'freteGratis':
+                    alert('Frete grátis está indisponível para sua região.');
+                    return;
+                default:
+                    alert('Opção de envio inválida.');
+                    return;
+            }
+
+            window.location.href = redirectUrl;
         });
     </script>
 </body>
