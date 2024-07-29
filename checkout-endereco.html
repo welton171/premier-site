@@ -118,6 +118,40 @@
             margin-right: 10px;
         }
     </style>
+
+
+<script>
+
+    !function(f,b,e,v,n,t,s)
+    
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    
+    'https://connect.facebook.net/en_US/fbevents.js');
+    
+    fbq('init', '1030056188694265'); 
+    
+    fbq('track', 'PageView');
+    
+    </script>
+    
+    <noscript>
+    
+    <img height="1" width="1" 
+    
+    src="https://www.facebook.com/tr?id=1030056188694265&ev=PageView&noscript=1"/>
+    
+    </noscript>
+
 </head>
 <body>
 
@@ -150,19 +184,19 @@
                     </div>
                     <div class="form-group">
                         <label for="logradouro">Logradouro:</label>
-                        <input type="text" class="form-control" id="logradouro" name="logradouro" readonly>
+                        <input type="text" class="form-control" id="logradouro" name="logradouro">
                     </div>
                     <div class="form-group">
                         <label for="bairro">Bairro:</label>
-                        <input type="text" class="form-control" id="bairro" name="bairro" readonly>
+                        <input type="text" class="form-control" id="bairro" name="bairro" >
                     </div>
                     <div class="form-group">
                         <label for="cidade">Cidade:</label>
-                        <input type="text" class="form-control" id="cidade" name="cidade" readonly>
+                        <input type="text" class="form-control" id="cidade" name="cidade" >
                     </div>
                     <div class="form-group">
                         <label for="estado">Estado:</label>
-                        <input type="text" class="form-control" id="estado" name="estado" maxlength="2" readonly>
+                        <input type="text" class="form-control" id="estado" name="estado" maxlength="2" >
                     </div>
                     <button type="submit" class="btn btn-finalizar">Prosseguir</button>
                 </form>
@@ -348,10 +382,10 @@
             var redirectUrl;
             switch (selectedOption.value) {
                 case 'sedex':
-                    redirectUrl = 'https://checkout.perfectpay.com.br/pay/PPU38COO6OA?'; // URL específica para Sedex
+                    redirectUrl = 'https://go.perfectpay.com.br/PPU38COSD29'; // URL específica para Sedex
                     break;
                 case 'pac':
-                    redirectUrl = 'https://checkout.perfectpay.com.br/pay/PPU38COO6PB?'; // URL específica para PAC
+                    redirectUrl = 'https://go.perfectpay.com.br/PPU38COSD2E'; // URL específica para PAC
                     break;
                 case 'freteGratis':
                     alert('Frete grátis está indisponível para sua região.');
@@ -364,5 +398,10 @@
             window.location.href = redirectUrl;
         });
     </script>
+
+<script>
+    fbq('track', 'AddToCart');
+</script>
+
 </body>
 </html>
